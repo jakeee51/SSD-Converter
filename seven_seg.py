@@ -7,7 +7,7 @@ def seven_seg(num):
                       '2': [" _ "," _|","|_ "], '3': [" _ "," _|"," _|"],
                       '4': ["   ","|_|","  |"], '5': [" _ ","|_ "," _|"],
                       '6': [" _ ","|_ ","|_|"], '7': [" _ ","  |","  |"],
-                      '8': [" _ ","|_|","|_|"], '9': [" _ ","|_|","  |"]}
+                      '8': [" _ ","|_|","|_|"], '9': [" _ ","|_|"," _|"]}
         return digit_dict.get(i)
     SSD = ""
     for d in range(len(num)): #First pass
@@ -22,6 +22,6 @@ def seven_seg(num):
         layer3 = switch(num[d])[2]
         SSD += layer3
     SSD += '\n'
-    return " _  _ \n _| _|\n|_  _|\n"
+    return SSD
 
-print(seven_seg('0'))
+print(seven_seg("1234567890"))
