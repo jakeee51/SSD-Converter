@@ -62,4 +62,4 @@ def cust_banner(text):
     final += '\n'
     return final
 
-print(cust_banner('THEDOGJUMPEDOVERTHEROOF'))
+print(cust_banner('ABCDEFG'))

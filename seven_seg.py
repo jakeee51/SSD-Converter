@@ -24,4 +24,6 @@ def seven_seg(num):
     SSD += '\n'
     return SSD
 
-print(seven_seg("1234567890"))
+while True:
+    a = str(input("Please enter a number: "))
+    print(seven_seg(a))
