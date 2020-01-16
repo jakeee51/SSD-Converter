@@ -62,4 +62,5 @@ def cust_banner(text):
     final += '\n'
     return final
 
-print(cust_banner('ABCDEFG'))
+inp = str(input("Enter a word: "))
+print(cust_banner(inp))
